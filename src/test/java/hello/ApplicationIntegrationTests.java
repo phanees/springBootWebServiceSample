@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2014-2015 the original author or authors.
  *
@@ -48,6 +49,7 @@ public class ApplicationIntegrationTests {
 
     @Test
     public void testSendAndReceive() {
+        System.out.println("Just Adding the comment");
         WebServiceTemplate ws = new WebServiceTemplate(marshaller);
         GetCountryRequest request = new GetCountryRequest();
         request.setName("Spain");

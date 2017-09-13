@@ -56,5 +56,11 @@ public class ApplicationIntegrationTests {
 
         assertThat(ws.marshalSendAndReceive("http://localhost:"
                 + port + "/ws", request)).isNotNull();
+
+		GetCountryRequest request = new GetCountryRequest();
+        request.setName("India");
+
+        assertThat(ws.marshalSendAndReceive("http://localhost:"
+                + port + "/ws", request)).isNotNull();
     }
 }

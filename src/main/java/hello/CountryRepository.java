@@ -55,13 +55,13 @@ public class CountryRepository {
 
 		countries.put(france.getName(), france);
 
-		Country france = new Country();
+		Country srilanka = new Country();
 		india.setName("SriLanka");	
 		india.setCapital("Colombo");
 		india.setCurrency(Currency.RUPEE);
 		india.setPopulation(263705000);
 
-		countries.put(france.getName(), france);
+		countries.put(srilanka.getName(), srilanka);
 	}
 
 	public Country findCountry(String name) {

@@ -42,7 +42,7 @@ public class CountryRepository {
 		Country india = new Country();
 		india.setName("India");	
 		india.setCapital("NewDelhi");
-		india.setCurrency(Currency.INR);
+		india.setCurrency(Currency.EUR);
 		india.setPopulation(263705000);
 
 		countries.put(india.getName(), india);
@@ -58,7 +58,7 @@ public class CountryRepository {
 		Country srilanka = new Country();
 		india.setName("SriLanka");	
 		india.setCapital("Colombo");
-		india.setCurrency(Currency.RUPEE);
+		india.setCurrency(Currency.EUR);
 		india.setPopulation(263705000);
 
 		countries.put(srilanka.getName(), srilanka);
@@ -68,4 +68,5 @@ public class CountryRepository {
 		Assert.notNull(name, "The country's name must not be null");
 		return countries.get(name);
 	}
+
 }
